@@ -38,17 +38,17 @@ export const constantRouterMap = [
   },
 
   {
-    path: '/example',
+    path: '/credit',
     component: Layout,
-    redirect: '/example/table',
-    name: 'Example',
-    meta: { title: 'Example', icon: 'example' },
+    redirect: '/credit/account',
+    name: 'Credit',
+    meta: { title: 'Credit', icon: 'money' },
     children: [
       {
-        path: 'table',
-        name: 'Table',
-        component: () => import('@/views/table/index'),
-        meta: { title: 'Table', icon: 'table' }
+        path: 'account',
+        name: 'Account',
+        component: () => import('@/views/credit/account'),
+        meta: { title: 'Account', icon: 'table' }
       },
       {
         path: 'tree',
